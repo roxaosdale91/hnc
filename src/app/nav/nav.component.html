@@ -1,0 +1,40 @@
+<nav class="navbar navbar-expand-lg rcqpmnav">
+  <!-- <a class="navbar-brand" href="#">Navbar</a> -->
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <!-- <span class="navbar-toggler-icon"></span> -->
+    <span class="navfoo">
+      Menu
+    </span>
+  </button>
+
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="navbar-nav mr-auto">
+      <li class="nav-item active">
+        <a  *ngIf="isHome" class="nav-link" href="" (click)="goHome()" [routerLink]="['/home']">HOME</a>
+        <a  *ngIf="!isHome" class="nav-link" href="/home" >HOME</a>
+      </li>
+      <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          ABOUT US
+        </a>
+        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+          <a class="dropdown-item"  (click)="notHome()" [routerLink]="['/clubprofile']" href="clubprofile">CLUB PROFILE</a>
+          <a class="dropdown-item"  (click)="notHome()" [routerLink]="['/vision']" href="vision">MISSION, VISION, VALUES</a>
+          <a class="dropdown-item"  (click)="notHome()" [routerLink]="['/president']" href="president">MESSAGE FROM THE TRANSFORMATIONAL PRESIDENT</a>
+          <a class="dropdown-item"  (click)="notHome()" [routerLink]="['/immediatepast']" href="immediatepast">MESSAGE FROM THE IMMEDIATE PAST PRESIDENT</a>
+        </div>
+      </li>
+      <li class="nav-item active">
+        <a  *ngIf="isHome" class="nav-link" href="#services">SERVICES</a>
+        <a  *ngIf="!isHome" class="nav-link" href="#/setservices?service=shoebox">SERVICES</a>
+      </li>
+      <li class="nav-item active">
+        <a *ngIf="isHome"  class="nav-link" href="#contactus">CONTACT US</a>
+        <a *ngIf="!isHome" class="nav-link" href="#/home/contact">CONTACT US</a>
+      </li>
+    </ul>
+    <form class="form-inline py-2 my-lg-0">
+      <img src="../../assets/1x/rcqpmlogo.png" alt="">
+    </form>
+  </div>
+</nav>

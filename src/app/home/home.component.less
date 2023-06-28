@@ -1,0 +1,45 @@
+.home {
+    padding-top: 50px;
+    min-height: 100vh;
+    max-width: 1440px;
+    margin: 0 auto;
+    overflow-x: hidden;
+  }
+  .home .wholepage {
+    width: 100%;
+    min-height: 600px;
+    overflow-x: hidden;
+  }
+  .home .wholepage #officerscript {
+    z-index: 0 !important;
+  }
+  .home .wholepage #officerscript img {
+    margin-top: -40px !important;
+    opacity: 0.5;
+  }
+  .home .containerslant {
+    width: 100%;
+    position: relative;
+  }
+  .home .containerslant .slant {
+    clip-path: polygon(0 3%, 100% 0%, 100% 97%, 0% 100%);
+    position: absolute;
+    width: 100%;
+    height: 112%;
+    opacity: 0.6;
+    z-index: 0;
+    background-image: url('../../assets/1x/grainbg.png');
+    background-size: cover;
+  }
+  @media only screen and (min-width: 1024px) {
+    .home .containerslant .slant {
+      clip-path: polygon(0 9%, 100% 0%, 100% 90%, 0% 100%);
+    }
+  }
+  .home .containerslant .slant-1 {
+    background-color: #D5CDBE;
+  }
+  .home .containerslant .slant-2 {
+    background-color: #B6B1AD;
+  }
+  

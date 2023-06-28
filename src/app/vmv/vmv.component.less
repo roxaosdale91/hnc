@@ -1,0 +1,42 @@
+.profile {
+    min-height: 100vh;
+    max-width: 1450px;
+    margin: 0 auto;
+    overflow-x: hidden;
+  }
+  .profile b {
+    font-weight: 900 !important;
+    font-family: 'myriadprobold';
+  }
+  @media only screen and (max-width: 1023px) {
+    .profile {
+      padding-top: 100px;
+    }
+  }
+  @media only screen and (min-width: 1024px) {
+    .profile {
+      background-image: url('../../assets/house.png');
+      background-size: 50%;
+      background-repeat: no-repeat;
+      background-position-x: -100px;
+      background-position-y: 480px;
+      position: relative;
+      display: flex;
+    }
+    .profile .wholepage {
+      padding-top: 100px;
+      position: relative;
+      height: 100vh !important;
+      background: -moz-linear-gradient(90deg, rgba(255, 255, 255, 0) 0%, rgba(120, 120, 120, 0.27) 25%, rgba(137, 137, 137, 0.27) 75%, rgba(255, 255, 255, 0) 100%);
+      background: -webkit-linear-gradient(90deg, rgba(255, 255, 255, 0) 0%, rgba(120, 120, 120, 0.27) 25%, rgba(137, 137, 137, 0.27) 75%, rgba(255, 255, 255, 0) 100%);
+      background: linear-gradient(90deg, rgba(255, 255, 255, 0) 0%, rgba(120, 120, 120, 0.27) 25%, rgba(137, 137, 137, 0.27) 75%, rgba(255, 255, 255, 0) 100%);
+      filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#ffffff", endColorstr="#ffffff", GradientType=1);
+    }
+    .profile .wholepage .containercard {
+      background-color: #ebe5d4;
+      min-height: 340px;
+      padding: 20px;
+      border-radius: 20px;
+    }
+  }
+  

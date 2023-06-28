@@ -1,0 +1,23 @@
+<div class="home">
+    <router-outlet>
+        
+    </router-outlet>
+    <div *ngIf="isDisplaywhole">
+        <app-landing></app-landing>
+        <div class="containerslant">
+            <div class="slant slant-1"></div>
+            <app-officers></app-officers>
+        </div>
+        <div class="containerslant">
+            <div class="slant slant-2"></div>
+            <div class="pt-5">
+                <app-members></app-members>
+            </div>
+        </div>
+        <div id="services">
+            <app-services></app-services>
+        </div>
+        <app-contact></app-contact>
+    </div>
+    
+</div>

@@ -1,0 +1,51 @@
+<div class="setservices">
+    <div class="wholepage d-flex">
+        <div class="w-75 ml-5 my-md-auto mt-5">
+            <div class="row align-items-center">
+                <h4 class="col-12 col-md-9">
+                    {{item.title}} 
+                </h4>
+                <div class="col-12 col-md-3 ml-auto">
+                    <div class="dropdown">
+                        <a class="btn btn-secondary dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            Other Services
+                        </a>
+                        
+                        <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                            <a class="dropdown-item" href="#/setservices?service=paaral">Paaral at Pag-asa</a>
+                            <a class="dropdown-item" href="#/setservices?service=shoebox">Knowledge in a Shoebox</a>
+                            <a class="dropdown-item" href="#/setservices?service=dentalmissions">Dental Mission</a>
+                            <a class="dropdown-item" href="#/setservices?service=disasterresponse">Disaster Response</a>
+                            <a class="dropdown-item" href="#/setservices?service=linaw">Oplan Linaw</a>
+                            <a class="dropdown-item" href="#/setservices?service=kidney">Kidney Talk</a>
+                            <a class="dropdown-item" href="#/setservices?service=antipolio">Anti-polio Sabayang Patak</a>
+                            <a class="dropdown-item" href="#/setservices?service=antirabies">Anti-Rabies</a>
+                            <a class="dropdown-item" href="#/setservices?service=bloodletting">Bloodletting</a>
+                            <a class="dropdown-item" href="#/setservices?service=distribution">Distribution of School Supplies</a>
+                            <a class="dropdown-item" href="#/setservices?service=scholarship">Scholarship for Preschool</a>
+                            <a class="dropdown-item" href="#/setservices?service=training">Vocational Training</a>
+                            <a class="dropdown-item" href="#/setservices?service=estero">Estero Clean-Up</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <hr>
+            <div class="row">
+                <div [ngClass]="item.isVideo ? 'col-md-8' : 'col-md-4'" class="px-1" *ngFor="let m of item.images">
+                    <div *ngIf="!item.isVideo"  class="card p-2 mb-2">
+                        <img [src]="m" class="w-100" alt="">
+                    </div>
+                    <div *ngIf="item.isVideo" class="card my-5">
+                        <video width="100%" height="100%" controls>
+                            <source [src]="m" type="video/mp4">
+                            Your browser does not support the video tag.
+                          </video>
+                    </div>
+                </div>
+                <div class="col-md-4 px-1" *ngFor="let m of item.images">
+                   
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
